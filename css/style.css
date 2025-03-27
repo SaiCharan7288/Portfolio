@@ -1128,3 +1128,30 @@ nav ul li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+      font-size: 16px; /* Adjust font size for better readability */
+  }
+  .hero-text h1 {
+      font-size: 24px; /* Make heading smaller */
+      text-align: center;
+  }
+  .hero-text h2 {
+      font-size: 18px;
+      text-align: center;
+  }
+  .button {
+      display: block;
+      width: 80%;
+      margin: 10px auto; /* Center buttons */
+  }
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+}
