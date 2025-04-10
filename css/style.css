@@ -1088,13 +1088,6 @@ a:focus {
 }
 /*# sourceMappingURL=style.css.map */
 
-
-
-
-
-
-
-
 /* Header Styling */
 header {
   background-color: #333; /* Dark background */
@@ -1106,22 +1099,22 @@ header {
 }
 
 /* Remove default margin & padding for the list */
-nav ul {
+/* nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex; /* Make list items horizontal */
-  gap: 20px; /* Spacing between menu items */
-}
+  /* gap: 20px; Spacing between menu items */
+/* } */ */
 
 /* Style for links */
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 8px 12px;
-  transition: 0.3s;
-}
+  /* nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+  } */
 
 /* Hover effect */
 nav ul li a:hover {

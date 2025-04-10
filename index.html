@@ -1,163 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic -->
   <meta charset="utf-8"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-  <!-- Mobile Metas -->
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  <!-- Site Metas -->
-  <meta content="Portfolio Website" name="description"/>
-  <meta content="Your Name" name="author"/>
+  <meta name="description" content="Portfolio Website"/>
+  <meta name="author" content="Sai Charan"/>
   <title>My Portfolio</title>
 
-
-
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <!-- Bootstrap and FontAwesome -->
-  <link href="/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
-  <link href="/css/bootstrap.css" rel="stylesheet"/>
-  <link href="/css/style.css" rel="stylesheet"/>
-  <link href="/css/responsive.css" rel="stylesheet"/>
-  <link href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="/Portfolio/css/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
 
-  <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <style>
+     body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 20px;
+      background-color: #131313;
+      flex-wrap: wrap;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .hero-text {
+      max-width: 600px;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-weight: 500;
+      color: #ccc;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
 
-<!-- Custom Styles for This Template -->
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-
-<!-- Responsive Styles -->
-<link rel="stylesheet" type="text/css" href="css/responsive.css" />
-
-<header>
-    <h1>About Me</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Certifications.html">Certifications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            
-        </ul>
-    </nav>
-
-    
-</header>
-
+    .navbar-brand {
+      color: #fff;
+      font-weight: bold;
+    }
+    .hero-text p {
+      margin: 10px 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+    }
+  
+    .social-icons a {
+      text-decoration: none;
+      color: #00bfff;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+  
+    .social-icons a:hover {
+      color: #fff;
+    }
+  
+    .cv-button {
+      padding: 10px 18px;
+      border: none;
+      background-color: #0073b1;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+  
+    .cv-button:hover {
+      background-color: #005885;
+    }
+  
+    .hero-image img {
+      width: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .hero-image {
+        margin-top: 30px;
+      }
+  
+      .hero-image img {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
+  </style>
+  
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg custom_nav-container d-block">
-    
-      <a class="navbar-brand" href="index.html">
-        <span> My Portfolio</span>
-      </a>
-      
-        
-        </form>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        </ul>
       </div>
     </div>
   </nav>
+  
 
-
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Hero Section with Container -->
+  <section class="hero-section">
+    <!-- Text Content -->
     <div class="hero-text">
-      <h1>Hello, It's Me <br> <span>Mothe Sai Charan</span></h1>
+      <h1>Hello, It's Me <br><span>Mothe Sai Charan</span></h1>
       <h2>I'm a <span class="highlight">Computer Science and Engineering Student</span></h2>
-
-    <!-- Font Awesome CDN (Keep this in your <head> or before using icons) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<div style="display: flex; gap: 15px; align-items: center;">
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/sai-charan-mothe-69767a2b9/" target="_blank">
-    <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
-  </a>
-
-  <!-- GitHub -->
-  <a href="https://github.com/SaiCharan7288" target="_blank">
-    <i class="fab fa-github fa-2x" style="color: #ffffff;"></i>
-  </a>
-
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/saicharan2263/?hl=en" target="_blank">
-    <i class="fab fa-instagram fa-2x" style="color: #E4405F;"></i>
-  </a>
-
-  <!-- My CV Button -->
-  <a href="https://drive.google.com/file/d/1Z1a2exsOywziag6rDfaKTnOCd5ezD0Tq/view?usp=sharing" target="_blank">
-    <button style="padding: 8px 16px; border: none; background-color: #0073b1; color: white; border-radius: 5px; cursor: pointer;">
-      My CV
-    </button>
-  </a>
-</div>      
-      <p> I’m a Computer Science engineering student with a keen interest in technology and hands-on learning.</p>
-      <p> I’ve worked on projects addressing social issues like mental health and equal job opportunities, using technology.</p>
-      <p> My aim is to create solutions that make a positive impact on society.</p>
-      <p> I’m always eager to learn new things and work with others to create something meaningful.</p>
       <div class="social-icons">
-        
-        
-        
-        
+        <a href="https://www.linkedin.com/in/sai-charan-mothe-69767a2b9/" target="_blank">
+          <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
+        </a>
+        <a href="https://github.com/SaiCharan7288" target="_blank">
+          <i class="fab fa-github fa-2x" style="color: #333;"></i>
+        </a>
+        <a href="https://www.instagram.com/saicharan2263/?hl=en" target="_blank">
+          <i class="fab fa-instagram fa-2x" style="color: #E4405F;"></i>
+        </a>
+      </div>
 
-      
-        
+      <a href="https://drive.google.com/file/d/1Z1a2exsOywziag6rDfaKTnOCd5ezD0Tq/view?usp=sharing" target="_blank">
+        <button class="cv-button">My CV</button>
+      </a>
 
+      <p>I’m a Computer Science engineering student with a keen interest in technology and hands-on learning.</p>
+      <p>I’ve worked on projects addressing social issues like mental health and equal job opportunities, using technology.</p>
+      <p>My aim is to create solutions that make a positive impact on society.</p>
+      <p>I’m always eager to learn new things and work with others to create something meaningful.</p>
+    </div>
 
-
-
-
-
-  
-
-  
-
-  <!-- Footer -->
-  
-
-  <!-- JavaScript -->
-  <script>
-    function openNav() {
-      document.getElementById("myNav").classList.toggle("open");
-    }
-  </script>
-
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image at Top Right Corner</title>
-  <style>
-      .container {
-          width: 400px; /* Adjust container size */
-          height: 400px;
-          border: 2px solid black;
-          position: relative; /* Needed for absolute positioning */
-      }
-
-      .container img {
-          width: 400px; /* Increased image size */
-          height: auto; /* Maintain aspect ratio */
-          position: absolute;
-          top: -300px; /* Moves image slightly out of the box for corner effect */
-          right: -500px; /* Moves image slightly outside for better positioning */
-      }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-      <img src="images/MY PHOTO.jpeg" alt="Picture">
-  </div>
-
-</body>
-</html>
-</section>
-
+    <!-- Image -->
+    <div class="hero-image">
+      <img src="images/MY PHOTO.jpeg" alt="My Photo">
+    </div>
+  </section>
 </body>
 </html>
